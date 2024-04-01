@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anagha ♥️ Manoj</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+    />
+    <!-- Include the Google Fonts stylesheet -->
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: whitesmoke; /* Cream color */
+        color: #333;
+      }
+
+      .header {
+        text-align: center;
+        padding: 20px;
+        background-color: whitesmoke;
+      }
+
+      .header h3 {
+        margin: 0;
+        color: #000000;
+        font-family: monospace;
+        font-style: italic;
+      }
+
+      .image-container {
+        position: relative;
+        text-align: center;
+        padding: 50px 0;
+      }
+
+      .image-container img {
+        width: 100%;
+        opacity: 0.5; /* Reduced opacity for the image */
+      }
+
+      .image-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .bride-groom-names {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        color: #000000;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        font-family: cursive;
+        font-weight: bolder;
+      }
+
+      .audio-container {
+        text-align: center;
+        padding: 20px;
+        background-color: whitesmoke;
+      }
+
+      .countdown-container {
+        text-align: center;
+        padding: 20px;
+        background-color: whitesmoke;
+        font-weight: bold;
+      }
+
+      .photo-section {
+        padding: 20px;
+        background-color: whitesmoke;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .photo {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+      }
+
+      .photo img {
+        width: 100%;
+        border-radius: 5px;
+      }
+
+      .event-section {
+        padding: 20px;
+        background-color: whitesmoke;
+      }
+
+      .event {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .event img {
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+
+      .event-info {
+        flex-grow: 1;
+      }
+
+      .map-container {
+        text-align: center;
+        padding: 20px;
+        background-color: whitesmoke;
+      }
+
+      #map {
+        width: 100%;
+      }
+
+      .bride-groom-info-section {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: whitesmoke;
+      }
+
+      .bride-groom-info {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .bride-groom-info img {
+        width: 45%;
+        border-radius: 5px;
+      }
+
+      .bride-info,
+      .groom-info {
+        width: 45%;
+        padding: 0 10px;
+      }
+
+      .bride-info p,
+      .groom-info p {
+        margin: 5px 0;
+      }
+
+      /* Adjustments for mobile */
+      @media (max-width: 768px) {
+        .image-container {
+          padding: 20px 0;
+          background-color: whitesmoke;
+        }
+
+        .image-container img {
+          width: 100%;
+          height: auto;
+        }
+
+        .photo {
+          width: 100%;
+        }
+
+        .bride-groom-info-section {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .bride-groom-info img {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+
+        .bride-info,
+        .groom-info {
+          width: 100%;
+          text-align: center;
+          padding: 0;
+        }
+      }
+
+      .contact-section {
+        text-align: center;
+        padding: 20px;
+        background-color: whitesmoke;
+      }
+
+      .contact-section h2 {
+        color: #333;
+      }
+
+      .contact-section p {
+        margin: 5px 0;
+      }
+
+      /* Footer */
+      .footer {
+        background-color: #333;
+        color: whitesmoke;
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h3>
+        Anagha and Manoj: Our love API is ready for deployment. Join us for the
+        grand launch!
+      </h3>
+    </div>
+
+    <div class="image-container">
+      <img src="img.jpg" alt="Bride and Groom" />
+      <div class="image-overlay"></div>
+      <div class="bride-groom-names">Anagha ♥️ Manoj</div>
+    </div>
+
+    <div class="header">
+      <h3>
+        Code for a lifetime of happiness: Join us as we execute our love story
+        together!
+      </h3>
+    </div>
+
+    <div class="audio-container">
+      <audio controls autoplay>
+        <source src="Tere sang Ishq Hua - Arijit Singh.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+    <div
+      style="
+        text-align: center;
+        font-family: cursive;
+        font-size: large;
+        font-weight: bold;
+        background-color: whitesmoke;
+        color: red;
+      "
+    >
+      Cherished Bride👸 & Beloved Groom🤴
+    </div>
+    <div class="bride-groom-info-section">
+      <div class="bride-groom-info">
+        <div class="bride-info">
+          <img src="bride.jpg" alt="Bride Photo" />
+          <p><strong>Anagha</strong></p>
+          <p>Ashok Dake's beloved daughter</p>
+        </div>
+        <!-- Add a small gap between the photos -->
+        <div style="margin: 0 10px"></div>
+        <div class="groom-info">
+          <img src="groom.jpg" alt="Groom Photo" />
+          <p><strong>Manoj</strong></p>
+          <p>Shubhash Wanje's cherished son</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="countdown-container">
+      <h2>The countdown is on!</h2>
+      <h4>Soon to be Mr. & Mrs.</h4>
+      <div id="countdown"></div>
+      <hr style="background-color: #000000" />
+    </div>
+
+    <div
+      style="padding: 20px; background-color: whitesmoke"
+      class="first-meeting-experience"
+    >
+      <span style="font-size: large; font-weight: bold; color: red"
+        >First Meet ♥️
+      </span>
+
+      <p>
+        In our arranged marriage journey, our first meeting was like a beautiful
+        puzzle falling into place. When we first saw each other's photos, little
+        did we know it would lead to a momentous encounter. As our families came
+        together, we talked about everything from our hopes for the future to
+        our family values. In that moment, we felt a connection that went beyond
+        words. We realized that this meeting wasn't just chance—it was meant to
+        be. It was the start of something special, where two hearts found each
+        other amidst the warmth of family and shared dreams. What made it even
+        more special was that it was the first time both of us were meeting
+        someone offline for a potential match. As our journey unfolds, what
+        began as an arranged marriage is now blossoming into something akin to a
+        love marriage a beautiful fusion of tradition and the serendipity of
+        love.
+      </p>
+      <hr style="background-color: #000000" />
+    </div>
+
+    <div class="photo-section">
+      <h2>Cherished Snapshots 📸</h2>
+      <div class="photo">
+        <img src="1.jpg" alt="Photo 1" loading="lazy" />
+      </div>
+      <div class="photo">
+        <img src="2.jpg" alt="Photo 2" />
+      </div>
+      <div class="photo">
+        <img src="3.jpg" alt="Photo 3" />
+      </div>
+    </div>
+
+    <div class="event-section">
+      <h2>Wedding Events</h2>
+      <div class="event"></div>
+      <div class="event">
+        <img src="sangeet.png" alt="Sangeet Logo" width="50" height="50" />
+        <div style="color: purple" class="event-info">
+          <p>Sangeet</p>
+          <p>Date: 1st May 2024</p>
+          <p>Time: 08:00 PM</p>
+          <p>Location: Wedding Location</p>
+        </div>
+      </div>
+      <div class="event">
+        <img src="haldi.jpg" alt="Haldi Logo" width="50" height="50" />
+        <div style="color: #bfbf37" class="event-info">
+          <p>Haldi</p>
+          <p>Date: 1st May 2024</p>
+          <p>Time: 06:00 PM</p>
+          <p>Location: Wedding Location</p>
+        </div>
+      </div>
+      <div class="event">
+        <img src="kalash.jpg" alt="Wedding Logo" width="50" height="50" />
+        <div style="color: red" class="event-info">
+          <p>Wedding</p>
+          <p>Date: 2nd May 2024</p>
+          <p>Time: 12:23 PM</p>
+          <p>Location: Wedding Location</p>
+        </div>
+      </div>
+    </div>
+    <div
+      style="padding: 20px; background-color: whitesmoke"
+      class="first-meeting-experience"
+    >
+      <p>
+        Love is a journey that begins with a single step, and on 2nd May 2024,
+        we're taking the first step towards forever. With immense joy and
+        gratitude, we invite you to witness and bless our union as we exchange
+        vows and embark on this beautiful journey together. Your presence will
+        make our day complete as we celebrate love, commitment, and the promise
+        of a lifetime together.
+      </p>
+      <hr style="background-color: #000000" />
+    </div>
+
+    <div class="contact-section">
+      <h2>Please Contact 📞</h2>
+      <p><strong>Ashok Ramchandra Dake</strong></p>
+      <p>9970792572 / 7972837406</p>
+    </div>
+    <div class="map-container">
+      <h2>Wedding Spot 📍</h2>
+      <div id="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3802.506102711114!2d75.9052738740318!3d17.626172983302297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc5d9ab316b6aef%3A0x9d822cc4c5bc6d6a!2sShiv%20Shankar%20Mangal%20Karyalay!5e0!3m2!1sen!2sin!4v1710613965577!5m2!1sen!2sin"
+          width="400"
+          height="300"
+          style="width: 100%; max-width: 600px"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+    <div class="image-container">
+      <img src="last.jpg" alt="Bride and Groom" />
+      <div class="image-overlay"></div>
+      <div class="bride-groom-names">Anagha & Manoj</div>
+      <div
+        style="
+          position: absolute;
+          top: 60%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 12px;
+          color: #000000;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+          font-family: cursive;
+          font-weight: 700;
+        "
+      >
+        02 May 2024
+      </div>
+    </div>
+    <div class="footer">
+      Copyright © 2024 dakeAlok. Powered by Alok, with love from the bride's
+      brother.
+    </div>
+
+    <script>
+      var weddingDate = new Date("May 2, 2024 00:00:00").getTime();
+
+      var x = setInterval(function () {
+        var now = new Date().getTime();
+        var distance = weddingDate - now;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("countdown").innerHTML =
+          days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("countdown").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>
